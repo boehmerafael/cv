@@ -1,8 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rafael Böhme — Strategie & Transformation, Berlin</title>
+<meta name="description" content="Corporate Strategy & Transformation: 8+ Jahre Erfahrung bei SIXT SE und DKB. Strategie und Umsetzung in einer Hand — Portfolio, Deep Dives und CV zum Download.">
+<meta property="og:title" content="Rafael Böhme — Strategie & Transformation">
+<meta property="og:description" content="Strategie & Umsetzung in einer Hand. 8+ Jahre · SIXT SE · DKB. Portfolio mit Deep Dives.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://boehmerafael.github.io/cv/">
+<meta name="twitter:card" content="summary">
+
 <script data-inline-runtime>
 // GENERATED from dc-runtime/src/*.ts — do not edit. Rebuild with `cd dc-runtime && bun run build`.
 "use strict";
@@ -1051,7 +1059,7 @@
     }
     return cur;
   }
-  var BABEL_URL = "https://unpkg.com/@babel/standalone@7.29.0/babel.min.js";
+  var BABEL_URL = "js/babel.min.js";
   var BABEL_SRI = "sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y";
   var GLOBAL_POLL_INTERVAL_MS = 50;
   var GLOBAL_POLL_TIMEOUT_MS = 3e4;
@@ -1597,9 +1605,9 @@
   }
 
   // src/index.ts
-  var REACT_URL = "https://unpkg.com/react@18.3.1/umd/react.production.min.js";
+  var REACT_URL = "js/react.production.min.js";
   var REACT_SRI = "sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z";
-  var REACT_DOM_URL = "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js";
+  var REACT_DOM_URL = "js/react-dom.production.min.js";
   var REACT_DOM_SRI = "sha384-gTGxhz21lVGYNMcdJOyq01Edg0jhn/c22nsx0kyqP0TxaV5WVdsSH1fSDUf5YJj1";
   function hideRawTemplate() {
     const s = document.createElement("style");
@@ -1698,10 +1706,13 @@
 <x-dc>
 
 <helmet data-dc-atomics>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="fonts/fonts.css" rel="stylesheet">
 <style>
+/* A11y: sichtbarer Tastatur-Fokus (UI/UX-Pro-Max Prio 1) */
+:focus-visible{outline:2px solid #FF4B26;outline-offset:3px;border-radius:4px;}
+/* A11y: Animationen respektieren Systemeinstellung */
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;scroll-behavior:auto !important;}}
+
 html, body { margin: 0; padding: 0; background: #0C0C10; }
 ::selection { background: rgba(255,75,38,0.4); color: #fff; }
 ::-webkit-scrollbar { width: 0; height: 0; }
@@ -1723,7 +1734,7 @@ html, body { margin: 0; padding: 0; background: #0C0C10; }
 
       <!-- ============ HERO — BERLIN ============ -->
       <div id="ch-start" data-screen-label="Hero" style="position:relative; height:100vh; overflow:hidden">
-        <img src="https://images.unsplash.com/photo-1560969184-10fe8719e047?w=1920&q=80" alt="Berlin" data-ipx="0.12" style="position:absolute; inset:0; width:100%; height:118%; top:-9%; object-fit:cover; animation:pfHeroZoom 2.6s cubic-bezier(0.16,0.8,0.3,1) both; filter:saturate(0.75) brightness(0.55)">
+        <img src="img/berlin.jpg" alt="Berlin" data-ipx="0.12" style="position:absolute; inset:0; width:100%; height:118%; top:-9%; object-fit:cover; animation:pfHeroZoom 2.6s cubic-bezier(0.16,0.8,0.3,1) both; filter:saturate(0.75) brightness(0.55)">
         <div style="position:absolute; inset:0; background:linear-gradient(rgba(12,12,16,0.35), rgba(12,12,16,0.1) 38%, rgba(12,12,16,0.72) 72%, #0C0C10 96%)"></div>
         <div style="position:relative; z-index:2; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:28px; pointer-events:none">
           <div style="font-family:'JetBrains Mono',monospace; font-size:13px; letter-spacing:0.28em; color:#FF4B26; animation:pfFade 0.8s 0.3s ease both">{{ t.heroKicker }}</div>
@@ -2027,6 +2038,96 @@ html, body { margin: 0; padding: 0; background: #0C0C10; }
 </div>
 
 </x-dc>
+
+<footer style="position:fixed; left:0; right:0; bottom:0; z-index:130; display:flex; justify-content:center; align-items:center; gap:22px; flex-wrap:wrap; padding:9px 7vw; font-family:'JetBrains Mono',monospace; font-size:10.5px; letter-spacing:0.16em; color:#8A8274; background:linear-gradient(to top, rgba(8,8,11,0.9), rgba(8,8,11,0)); pointer-events:none">
+  <span style="pointer-events:auto">© 2026 RAFAEL BÖHME</span>
+  <button type="button" onclick="rbOpenLegal('impressum')" style="background:none; border:none; padding:0; cursor:pointer; font:inherit; letter-spacing:inherit; color:#8A8274; pointer-events:auto; transition:color 0.25s ease" onmouseover="this.style.color='#FF4B26'" onmouseout="this.style.color='#8A8274'">IMPRESSUM</button>
+  <button type="button" onclick="rbOpenLegal('datenschutz')" style="background:none; border:none; padding:0; cursor:pointer; font:inherit; letter-spacing:inherit; color:#8A8274; pointer-events:auto; transition:color 0.25s ease" onmouseover="this.style.color='#FF4B26'" onmouseout="this.style.color='#8A8274'">DATENSCHUTZ</button>
+</footer>
+
+<!-- ============ LEGAL OVERLAY (Impressum + Datenschutz, self-contained) ============ -->
+<div id="rb-legal" style="display:none; position:fixed; inset:0; z-index:500; overflow-y:auto; background:rgba(8,8,11,0.94); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px)">
+  <div style="max-width:760px; margin:0 auto; padding:9vh 7vw 14vh; font-family:'Instrument Sans',system-ui,sans-serif; font-size:16.5px; line-height:1.8; color:#C9C2B4">
+    <button type="button" onclick="rbCloseLegal()" style="position:fixed; top:26px; right:7vw; z-index:510; background:rgba(16,16,21,0.8); border:1px solid rgba(241,237,228,0.25); border-radius:50%; width:46px; height:46px; color:#F1EDE4; font-size:17px; cursor:pointer; transition:all 0.25s ease" onmouseover="this.style.borderColor='#FF4B26';this.style.color='#FF4B26'" onmouseout="this.style.borderColor='rgba(241,237,228,0.25)';this.style.color='#F1EDE4'">✕</button>
+
+    <!-- ---------- IMPRESSUM ---------- -->
+    <section id="rb-impressum" style="display:none">
+      <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.2em; color:#FF4B26; margin-bottom:28px">RECHTLICHES</div>
+      <h1 style="font-family:'Syne',sans-serif; font-weight:800; font-size:clamp(34px,6vw,60px); line-height:1.05; letter-spacing:-0.02em; color:#F1EDE4; margin:0 0 40px">Impressum</h1>
+
+      <h2 style="font-family:'Syne',sans-serif; font-weight:700; font-size:20px; color:#F1EDE4; margin:44px 0 10px">Angaben gemäß § 5 DDG</h2>
+      <p style="margin:0 0 14px">Rafael Böhme<br>Bernstorffstr. 11<br>13507 Berlin<br>Deutschland</p>
+
+      <h2 style="font-family:'Syne',sans-serif; font-weight:700; font-size:20px; color:#F1EDE4; margin:44px 0 10px">Kontakt</h2>
+      <p style="margin:0 0 14px">E-Mail: <a href="mailto:Boehme.Rafael@gmail.com" style="color:#F1EDE4; text-decoration:none; border-bottom:1px solid rgba(255,75,38,0.5)">Boehme.Rafael@gmail.com</a></p>
+
+      <h2 style="font-family:'Syne',sans-serif; font-weight:700; font-size:20px; color:#F1EDE4; margin:44px 0 10px">Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+      <p style="margin:0 0 14px">Rafael Böhme<br>Bernstorffstr. 11<br>13507 Berlin</p>
+
+      <hr style="height:1px; background:rgba(241,237,228,0.12); margin:44px 0; border:none">
+
+      <h2 style="font-family:'Syne',sans-serif; font-weight:700; font-size:20px; color:#F1EDE4; margin:44px 0 10px">Haftung für Inhalte</h2>
+      <p style="margin:0 0 14px; font-size:14px; color:#8A8274; line-height:1.7">Als Diensteanbieter bin ich gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
+
+      <h2 style="font-family:'Syne',sans-serif; font-weight:700; font-size:20px; color:#F1EDE4; margin:44px 0 10px">Haftung für Links</h2>
+      <p style="margin:0 0 14px; font-size:14px; color:#8A8274; line-height:1.7">Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Links umgehend entfernen.</p>
+
+      <h2 style="font-family:'Syne',sans-serif; font-weight:700; font-size:20px; color:#F1EDE4; margin:44px 0 10px">Urheberrecht</h2>
+      <p style="margin:0 0 14px; font-size:14px; color:#8A8274; line-height:1.7">Die durch mich erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+    </section>
+
+    <!-- ---------- DATENSCHUTZ ---------- -->
+    <section id="rb-datenschutz" style="display:none">
+      <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.2em; color:#FF4B26; margin-bottom:28px">RECHTLICHES</div>
+      <h1 style="font-family:'Syne',sans-serif; font-weight:800; font-size:clamp(32px,5.5vw,56px); line-height:1.05; letter-spacing:-0.02em; color:#F1EDE4; margin:0 0 40px">Datenschutz&shy;erklärung</h1>
+
+      <h2 style="font-family:'Syne',sans-serif; font-weight:700; font-size:21px; color:#F1EDE4; margin:46px 0 12px">1. Verantwortlicher</h2>
+      <p style="margin:0 0 14px">Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p>
+      <p style="margin:0 0 14px">Rafael Böhme<br>Bernstorffstr. 11<br>13507 Berlin<br>E-Mail: <a href="mailto:Boehme.Rafael@gmail.com" style="color:#F1EDE4; text-decoration:none; border-bottom:1px solid rgba(255,75,38,0.5)">Boehme.Rafael@gmail.com</a></p>
+
+      <h2 style="font-family:'Syne',sans-serif; font-weight:700; font-size:21px; color:#F1EDE4; margin:46px 0 12px">2. Überblick</h2>
+      <p style="margin:0 0 14px; font-size:14.5px; color:#8A8274; line-height:1.75">Diese Website ist eine rein informative Online-Präsenz (persönliches Portfolio/Lebenslauf). Es werden <strong>keine Cookies</strong> gesetzt, <strong>keine Analyse- oder Tracking-Dienste</strong> eingesetzt und <strong>keine Kontaktformulare</strong> angeboten. Schriftarten, Bilder und Programmbibliotheken werden lokal von diesem Server ausgeliefert; es werden hierfür keine Daten an Dritte (z. B. Google Fonts) übertragen. Eine Verarbeitung personenbezogener Daten findet nur im technisch notwendigen Umfang durch den Hosting-Anbieter statt (siehe Ziffer 3).</p>
+
+      <h2 style="font-family:'Syne',sans-serif; font-weight:700; font-size:21px; color:#F1EDE4; margin:46px 0 12px">3. Hosting &amp; Server-Logfiles</h2>
+      <p style="margin:0 0 14px; font-size:14.5px; color:#8A8274; line-height:1.75">Diese Website wird bei <strong>GitHub Pages</strong> gehostet, einem Dienst der GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA (ein Unternehmen von Microsoft). Beim Aufruf der Website erfasst der Hosting-Anbieter automatisch Informationen in sogenannten Server-Logfiles: IP-Adresse, Datum und Uhrzeit des Zugriffs, Name und URL der abgerufenen Datei, verwendeter Browser und ggf. Betriebssystem sowie die Referrer-URL.</p>
+      <p style="margin:0 0 14px; font-size:14.5px; color:#8A8274; line-height:1.75">Die Verarbeitung erfolgt zur Gewährleistung eines störungsfreien Verbindungsaufbaus sowie der Sicherheit und Stabilität der Website. Rechtsgrundlage ist das berechtigte Interesse gemäß <strong>Art. 6 Abs. 1 lit. f DSGVO</strong>. Da GitHub Daten auch in den USA verarbeiten kann, findet ggf. eine Übermittlung in ein Drittland statt; GitHub stützt diese auf das EU-US Data Privacy Framework bzw. die Standardvertragsklauseln der EU-Kommission. Weitere Informationen: <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener" style="color:#F1EDE4; text-decoration:none; border-bottom:1px solid rgba(255,75,38,0.5)">GitHub-Datenschutzerklärung</a>.</p>
+
+      <h2 style="font-family:'Syne',sans-serif; font-weight:700; font-size:21px; color:#F1EDE4; margin:46px 0 12px">4. Kontaktaufnahme per E-Mail</h2>
+      <p style="margin:0 0 14px; font-size:14.5px; color:#8A8274; line-height:1.75">Wenn Sie mir per E-Mail schreiben, werden Ihre Angaben inklusive der mitgeteilten Kontaktdaten zum Zweck der Bearbeitung Ihrer Anfrage gespeichert. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO bzw. Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage auf einen Vertrag abzielt. Diese Daten gebe ich nicht ohne Ihre Einwilligung weiter und lösche sie, sobald sie zur Zweckerreichung nicht mehr erforderlich sind.</p>
+
+      <h2 style="font-family:'Syne',sans-serif; font-weight:700; font-size:21px; color:#F1EDE4; margin:46px 0 12px">5. Externe Links</h2>
+      <p style="margin:0 0 14px; font-size:14.5px; color:#8A8274; line-height:1.75">Diese Website enthält einen Link zu meinem LinkedIn-Profil. Erst durch aktives Anklicken werden Daten an den jeweiligen Anbieter (LinkedIn Ireland Unlimited Company) übertragen. Auf deren Datenverarbeitung habe ich keinen Einfluss.</p>
+
+      <h2 style="font-family:'Syne',sans-serif; font-weight:700; font-size:21px; color:#F1EDE4; margin:46px 0 12px">6. SSL-/TLS-Verschlüsselung</h2>
+      <p style="margin:0 0 14px; font-size:14.5px; color:#8A8274; line-height:1.75">Diese Seite nutzt aus Sicherheitsgründen eine SSL-/TLS-Verschlüsselung, erkennbar am „https://" in der Adresszeile Ihres Browsers.</p>
+
+      <hr style="height:1px; background:rgba(241,237,228,0.12); margin:46px 0; border:none">
+
+      <h2 style="font-family:'Syne',sans-serif; font-weight:700; font-size:21px; color:#F1EDE4; margin:46px 0 12px">7. Ihre Rechte</h2>
+      <p style="margin:0 0 14px; font-size:14.5px; color:#8A8274; line-height:1.75">Sie haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) sowie ein Widerspruchsrecht (Art. 21 DSGVO). Zur Ausübung genügt eine E-Mail an die oben genannte Adresse. Zudem steht Ihnen ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde zu.</p>
+
+      <h2 style="font-family:'Syne',sans-serif; font-weight:700; font-size:21px; color:#F1EDE4; margin:46px 0 12px">8. Aktualität</h2>
+      <p style="margin:0 0 14px; font-size:14.5px; color:#8A8274; line-height:1.75">Diese Datenschutzerklärung hat den Stand Juli 2026. Durch die Weiterentwicklung der Website oder geänderte gesetzliche Vorgaben kann eine Anpassung erforderlich werden.</p>
+    </section>
+  </div>
+</div>
+<script>
+  function rbOpenLegal(which) {
+    document.getElementById('rb-impressum').style.display = (which === 'impressum') ? 'block' : 'none';
+    document.getElementById('rb-datenschutz').style.display = (which === 'datenschutz') ? 'block' : 'none';
+    var o = document.getElementById('rb-legal');
+    o.style.display = 'block';
+    o.scrollTop = 0;
+    document.body.style.overflow = 'hidden';
+  }
+  function rbCloseLegal() {
+    document.getElementById('rb-legal').style.display = 'none';
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') rbCloseLegal();
+  });
+</script>
 <script type="text/x-dc" data-dc-script data-props="{&quot;cursorFx&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Effekte&quot;},&quot;grain&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Effekte&quot;},&quot;scrollEase&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:0.09,&quot;min&quot;:0.03,&quot;max&quot;:0.2,&quot;step&quot;:0.01,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Effekte&quot;}}">
 class Component extends DCLogic {
   state = { dive: null, lang: 'de' };
@@ -2391,7 +2492,7 @@ class Component extends DCLogic {
       diveHasList: !!(info && info.list && info.list.length),
       toggleLang: () => this.setState(
         { lang: this.state.lang === 'de' ? 'en' : 'de' },
-        () => window.dispatchEvent(new Event('resize'))
+        () => { document.documentElement.lang = this.state.lang; window.dispatchEvent(new Event('resize')); }
       ),
       openQr: () => this.setState({ dive: 'qr' }),
       openOkr: () => this.setState({ dive: 'okr' }),
